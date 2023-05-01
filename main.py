@@ -2,15 +2,21 @@
 
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+opcion1='hi, world'
+opcion2= 'hola, mundo'
+print( 'seleccione la opcion deseada' )
+
+print('1. '+ opcion1)
+print('2. '+ opcion2)
+
+resultado = input('ingrese la opcion elegida: ')
+if resultado=='1':
+    print(opcion1)
+elif resultado=='2':
+    print(opcion2)
+else:
+    print('opcion invalida')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
