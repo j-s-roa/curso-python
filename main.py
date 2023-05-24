@@ -1,20 +1,16 @@
-def es_bisiesto():
-    year = int(input("Ingresa el año: "))
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                print('es biciesto')
-                return True
+from jornadaLaboral import JornadaLaboral
 
-            else:
-                print('No es biciesto')
-                return False
-        else:
-            print('es biciesto')
-            return True
 
+def main():
+    # Trabajo nocturno de Lunes a Lunes
+    jornadaLaboral = JornadaLaboral(0, 7)
+    esHorarioLaboral = jornadaLaboral.esHorarioLaboral()
+    if esHorarioLaboral == 0:
+        print(
+            f'Sigue trabajando!! te que dan {round(jornadaLaboral.tiempoFinTrabajo()/3600,2)} horas para finalizar')
     else:
-        print('No es biciesto')
-        return False
+        print("Estas en tu tiempo libre, disfrutalo!")
 
-print(es_bisiesto())
+
+if __name__ == "__main__":
+    main()
