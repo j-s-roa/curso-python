@@ -1,22 +1,20 @@
-# This is a sample Python script.
+def es_bisiesto():
+    year = int(input("Ingresa el año: "))
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                print('es biciesto')
+                return True
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-opcion1='hi, world'
-opcion2= 'hola, mundo'
-print( 'seleccione la opcion deseada' )
+            else:
+                print('No es biciesto')
+                return False
+        else:
+            print('es biciesto')
+            return True
 
-print('1. '+ opcion1)
-print('2. '+ opcion2)
+    else:
+        print('No es biciesto')
+        return False
 
-resultado = input('ingrese la opcion elegida: ')
-if resultado=='1':
-    print(opcion1)
-elif resultado=='2':
-    print(opcion2)
-else:
-    print('opcion invalida')
-
-
-
-
+print(es_bisiesto())
