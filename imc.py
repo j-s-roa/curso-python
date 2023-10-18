@@ -1,6 +1,6 @@
 peso = float(input("Ingresa tu peso en kilogramos: "))
-altura = float(input("Ingresa tu altura en metros: "))
+altura = float(input("Ingresa tu altura en Metros: "))
 
 imc = peso / (altura ** 2)
 
-print("Tu índice de masa corporal es: {:.2f}".format(imc))
+print("Tu índice de masa corporal Es: {:.2f}".format(imc))
